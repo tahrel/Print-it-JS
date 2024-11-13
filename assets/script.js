@@ -30,7 +30,7 @@ arrowLeft.addEventListener('click', function() {
 
 arrowRight.addEventListener('click', function() {
     console.log('Clic sur la flèche droite');
-    // alert('la flèche droite');
+    //  alert('la flèche droite');
   
 });
 
