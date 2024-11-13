@@ -57,3 +57,21 @@ function updateSlide(index) {
         dot.classList.toggle('dot_selected', i === index);
     });
 }
+
+document.querySelector('.arrow_right').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlide(currentIndex);
+});
+
+
+
+
+document.querySelector('.arrow_left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlide(currentIndex);
+});
+
+
+
+
+updateSlide(currentIndex);
