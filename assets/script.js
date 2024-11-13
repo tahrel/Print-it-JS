@@ -17,3 +17,23 @@ const slides = [
 	}
 ]
 
+const arrowLeft = document.querySelector('.arrow_left');
+const arrowRight = document.querySelector('.arrow_right');
+
+
+
+
+arrowLeft.addEventListener('click', function() {
+    console.log('Clic sur la flèche gauche');
+    // alert('la flèche gauche');
+   
+});
+
+
+
+
+arrowRight.addEventListener('click', function() {
+    console.log('Clic sur la flèche droite');
+    //  alert('la flèche droite');
+ 
+});
