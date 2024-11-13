@@ -37,3 +37,23 @@ arrowRight.addEventListener('click', function() {
     //  alert('la flèche droite');
  
 });
+
+const bannerImg = document.querySelector('.banner-img');
+const tagLine = document.querySelector('#banner p');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+
+
+
+
+function updateSlide(index) {
+   
+    bannerImg.src = `./assets/images/slideshow/${slides[index].image}`;
+   
+    tagLine.innerHTML = slides[index].tagLine;
+
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('dot_selected', i === index);
+    });
+}
